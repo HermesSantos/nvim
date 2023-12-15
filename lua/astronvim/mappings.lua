@@ -33,7 +33,12 @@ maps.n["|"] = { "<cmd>vsplit<cr>", desc = "Vertical Split" }
 maps.n["\\"] = { "<cmd>split<cr>", desc = "Horizontal Split" }
 maps.n["<C-u>"] = { "<C-u>zz", desc = "Horizontal Split" }
 maps.n["<C-d>"] = { "<C-d>zz", desc = "Horizontal Split" }
-maps.n["<leader>tw"] = { "<cmd>TwilightEnable<cr>", desc = "Horizontal Split" }
+maps.n["<leader>tw"] = { "<cmd>TwilightEnable<cr>", desc = "Twilight mode on" }
+maps.n["<leader>tw"] = { "<cmd>TwilightDisable<cr>", desc = "Twilight mode off" }
+maps.n["{"] = { "[{", desc = "Curly brackets up" }
+maps.n["}"] = { "]}", desc = "Curly brackets down" }
+maps.n["("] = { "[(", desc = "Curly brackets up" }
+maps.n[")"] = { "])", desc = "Curly brackets down" }
 -- TODO: Remove when dropping support for <Neovim v0.10
 if not vim.ui.open then maps.n["gx"] = { utils.system_open, desc = "Open the file under cursor with system app" } end
 
